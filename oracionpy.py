@@ -1,0 +1,12 @@
+import re
+textfile = open('hola.txt', 'r')
+filetext = textfile.read()
+textfile.close()
+matches = re.findall(r'el', filetext)
+print(matches)
+matches2 = re.findall(r'p\w*', filetext)
+print(matches2)
+matches3 = re.findall(r'\w*es\w*', filetext)
+print(matches3)
+matches4 = re.findall(r'v\w*', filetext)
+print(matches4)
